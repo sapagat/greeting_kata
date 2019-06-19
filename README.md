@@ -9,6 +9,8 @@ https://github.com/testdouble/contributing-tests/wiki/Greeting-Kata
 
 ## Run tests
 
+Each time the test runs, a commit is made with the changes and with the test status (RED or GREEN).
+
 ```
-npm test
+./test.sh
 ```
