@@ -11,8 +11,8 @@ describe('Greeting', () => {
   })
 })
 
-const FALLBACK_NAME = 'my friend'
+const APPELLATIVE = 'my friend'
 
-function greet(name=FALLBACK_NAME) {
+function greet(name=APPELLATIVE) {
   return `Hello, ${name}.`
 }
