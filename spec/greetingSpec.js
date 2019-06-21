@@ -22,7 +22,7 @@ const APPELLATIVE = 'my friend'
 function greet(name=APPELLATIVE) {
   let result
   if (isInUppercase(name)){
-    result = 'HELLO ' + name + '!'
+    result = `HELLO ${name}!`
   } else {
     result =  `Hello, ${name}.`
   }
