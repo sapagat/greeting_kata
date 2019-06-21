@@ -1,5 +1,5 @@
 describe('Setup', () => {
   it('is working', () => {
-    expect(true).toEqual(false)
+    expect(true).toEqual(true)
   })
 })
