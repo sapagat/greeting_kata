@@ -55,7 +55,7 @@ function buildDefaultGreeting(name) {
 }
 
 function buildMultipleGreeting(name) {
-  return 'Hello, Laura and Leo.'
+  return `Hello, ${name[0]} and ${name[1]}.`
 }
 
 function isInUppercase(name) {
