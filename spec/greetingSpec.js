@@ -24,13 +24,17 @@ function greet(name=APPELLATIVE) {
   if (isInUppercase(name)){
     greeting = buildShoutingGreeting(name)
   } else {
-    greeting =  `Hello, ${name}.`
+    greeting = buildDefaultGreeting(name)
   }
   return greeting
 }
 
 function buildShoutingGreeting(name) {
   return `HELLO ${name}!`
+}
+
+function buildDefaultGreeting(name) {
+  return `Hello, ${name}.`
 }
 
 function isInUppercase(name) {
