@@ -11,8 +11,8 @@ describe('Greeting', () => {
   })
 
   it('shouts when the name is in uppercase', () => {
-    const name = 'CARLOS'
-    const result = greet(name)
+    const uppercaseName = 'CARLOS'
+    const result = greet(uppercaseName)
     expect(result).toEqual('HELLO CARLOS!')
   })
 })
