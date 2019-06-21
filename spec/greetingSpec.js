@@ -11,6 +11,8 @@ describe('Greeting', () => {
   })
 })
 
-function greet(name='my friend') {
+const FALLBACK_NAME = 'my friend'
+
+function greet(name=FALLBACK_NAME) {
   return `Hello, ${name}.`
 }
