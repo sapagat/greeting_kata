@@ -9,6 +9,12 @@ describe('Greeting', () => {
     result = greet()
     expect(result).toEqual('Hello, my friend.')
   })
+
+  it('shouts when the name is in uppercase', () => {
+    const name = 'CARLOS'
+    const result = greet(name)
+    expect(result).toEqual('HELLO CARLOS!')
+  })
 })
 
 const APPELLATIVE = 'my friend'
