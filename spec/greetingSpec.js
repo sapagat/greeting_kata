@@ -5,3 +5,7 @@ describe('Greeting', () => {
     expect(result).toEqual("Hello, Lorena.")
   })
 })
+
+function greet() {
+  
+}
