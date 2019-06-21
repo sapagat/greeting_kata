@@ -24,6 +24,8 @@ describe('Greeting', () => {
 })
 
 const APPELLATIVE = 'my friend'
+const FIRST = 0
+const SECOND = 1
 
 function greet(name=APPELLATIVE) {
   let greeting
@@ -56,7 +58,7 @@ function buildDefaultGreeting(name) {
 }
 
 function buildMultipleGreeting(names) {
-  return `Hello, ${names[0]} and ${names[1]}.`
+  return `Hello, ${names[FIRST]} and ${names[SECOND]}.`
 }
 
 function isInUppercase(name) {
