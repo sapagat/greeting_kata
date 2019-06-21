@@ -27,7 +27,7 @@ const APPELLATIVE = 'my friend'
 
 function greet(name=APPELLATIVE) {
   let greeting
-  if (Array.isArray(name)) {
+  if (isMultiple(name)) {
     return 'Hello, Laura and Leo.'
   }
   if (isInUppercase(name)){
@@ -48,4 +48,8 @@ function buildDefaultGreeting(name) {
 
 function isInUppercase(name) {
   return name.toUpperCase() === name
+}
+
+function isMultiple(name) {
+  return Array.isArray(name)
 }
