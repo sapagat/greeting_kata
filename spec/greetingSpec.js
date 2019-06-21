@@ -23,8 +23,9 @@ function greet(name=APPELLATIVE) {
   let result
   if (isInUppercase(name)){
     result = 'HELLO ' + name + '!'
+  } else {
+    result =  `Hello, ${name}.`
   }
-  result = `Hello, ${name}.`
   return result
 }
 
