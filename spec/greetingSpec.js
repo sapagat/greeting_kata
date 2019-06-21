@@ -30,12 +30,18 @@ function greet(name=APPELLATIVE) {
   if (isMultiple(name)) {
     greeting = buildMultipleGreeting(name)
   } else {
-    if (isInUppercase(name)){
-      greeting = buildShoutingGreeting(name)
-    }
-    else {
-      greeting = buildDefaultGreeting(name)
-    }
+    greeting = buildSingleGreeting(name)
+  }
+  return greeting
+}
+
+function buildSingleGreeting(name) {
+  let greeting
+  if (isInUppercase(name)){
+    greeting = buildShoutingGreeting(name)
+  }
+  else {
+    greeting = buildDefaultGreeting(name)
   }
   return greeting
 }
