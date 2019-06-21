@@ -7,5 +7,5 @@ describe('Greeting', () => {
 })
 
 function greet() {
-  
+  return undefined
 }
