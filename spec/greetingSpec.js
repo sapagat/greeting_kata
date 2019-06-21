@@ -6,6 +6,6 @@ describe('Greeting', () => {
   })
 })
 
-function greet() {
+function greet(name) {
   return "Hello, Lorena."
 }
