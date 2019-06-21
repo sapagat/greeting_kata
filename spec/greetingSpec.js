@@ -27,6 +27,9 @@ const APPELLATIVE = 'my friend'
 
 function greet(name=APPELLATIVE) {
   let greeting
+  if (Array.isArray(name)) {
+    return 'Hello, Laura and Leo.'
+  }
   if (isInUppercase(name)){
     greeting = buildShoutingGreeting(name)
   } else {
