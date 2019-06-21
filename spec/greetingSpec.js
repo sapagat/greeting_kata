@@ -4,6 +4,11 @@ describe('Greeting', () => {
     result = greet(name)
     expect(result).toEqual("Hello, Lorena.")
   })
+
+  it('says hello to a stranger, but politely', () => {
+    result = greet()
+    expect(result).toEqual('Hello, my friend.')
+  })
 })
 
 function greet(name) {
