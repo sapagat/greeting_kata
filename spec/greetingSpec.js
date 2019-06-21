@@ -5,7 +5,7 @@ describe('Greeting', () => {
     expect(result).toEqual("Hello, Lorena.")
   })
 
-  it('says hello to a stranger, but politely', () => {
+  it('says hello with an appellative when no name given', () => {
     result = greet()
     expect(result).toEqual('Hello, my friend.')
   })
