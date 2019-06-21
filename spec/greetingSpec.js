@@ -15,6 +15,12 @@ describe('Greeting', () => {
     const result = greet(uppercaseName)
     expect(result).toEqual('HELLO CARLOS!')
   })
+
+  it('allows to greet two names in one greeting', () => {
+    const twoNames = ['Laura', 'Leo']
+    const result = greet(twoNames)
+    expect(result).toEqual('Hello, Laura and Leo.')
+  })
 })
 
 const APPELLATIVE = 'my friend'
