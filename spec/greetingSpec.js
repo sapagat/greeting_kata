@@ -7,5 +7,5 @@ describe('Greeting', () => {
 })
 
 function greet(name) {
-  return "Hello, Lorena."
+  return `Hello, ${name}.`
 }
