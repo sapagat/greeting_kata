@@ -20,10 +20,12 @@ describe('Greeting', () => {
 const APPELLATIVE = 'my friend'
 
 function greet(name=APPELLATIVE) {
+  let result
   if (isInUppercase(name)){
-    return 'HELLO ' + name + '!'
+    result = 'HELLO ' + name + '!'
   }
-  return `Hello, ${name}.`
+  result = `Hello, ${name}.`
+  return result
 }
 
 function isInUppercase(name) {
